@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body class="text-gray-600 font-light">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="relative bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div
+                class="flex justify-between items-center border-b-2 border-gray-100 py-2 md:justify-start md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <span class="sr-only">Workflow</span>
+                        <img class="h-8 w-auto sm:h-10"
+                            src="./logo.png" alt="">
+                    </a>
+                </div>
+                <div class="-mr-2 -my-2 md:hidden">
+                </div>
+                <nav class="flex space-x-10">
+                    <a href="#schedule" class="text-base  hover:text-gray-900">
+                        2日行程
+                    </a>
+                    <a href="#map" class="text-base  hover:text-gray-900">
+                        地圖
+                    </a>
+                </nav>
+                <div class="flex items-center justify-end md:flex-1 lg:w-0">
+
+                    <a href="#"
+                        class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base  text-white bg-green-600 hover:bg-green-700">
+                        報名
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="up" class="bg-gray-300 relative" style="height: 400px; overflow: hidden;">
+        <div class="relative w-full h-full flex items-center justify-center">
+            <div class="text-center z-30">
+                <h1 class="text-white font-extrabold text-4xl">
+                    JCA 2021 南北對抗賽
+                </h1>
+                <h2 class="text-white mt-6">
+                    信誼高爾夫球場 | 4.22.2021-4.23.2021
+                </h2>
+            </div>
+            <div class="absolute bg-gray-900 w-full h-full z-20 bg-opacity-30"></div>
+            <!-- Overlay Background + Center Control -->
+            <div class=" h-full absolute z-10 w-full h-full"
+                style="background: url(https://images.pexels.com/photos/114972/pexels-photo-114972.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat center/cover;">
+            </div>
+        </div>
+    </header>
+
+    <section id="schedule" class="py-10 px-4">
+        <h2 class="text-center text-4xl mb-5 ">活動行程(2日)</h2>
+        <div class="flex justify-center mb-4 ">
+            <hr class="w-1/4 border-green-300">
+        </div>
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="flex flex-col">
+            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="shadow overflow-hidden border-b border-green-200 sm:rounded-lg">
+                        <h3 class="mb-4">Thursday | 禮拜四 4.22.2021</h3>
+                        <table class="min-w-full divide-y divide-green-200">
+                            <thead class="bg-green-50">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs  uppercase tracking-wider">
+                                        行程
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs  uppercase tracking-wider">
+                                        活動
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        10:00-11:00AM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        球場報到
+                                    </td>
+                                </tr>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        11:00-5:00PM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        打球
+                                    </td>
+                                </tr>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        5:00-8:00PM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        BBQ (地點: 信誼練習場)
+                                    </td>
+                                </tr>
+
+
+                                <!-- More items... -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col mt-6 ">
+            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="shadow overflow-hidden border-b border-green-200 sm:rounded-lg">
+                        <h3 class="mb-4">Friday | 禮拜五 4.23.2021</h3>
+                        <table class="min-w-full divide-y divide-green-200">
+                            <thead class="bg-green-50">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs  uppercase tracking-wider">
+                                        行程
+                                    </th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs  uppercase tracking-wider">
+                                        活動
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        10:00-11:00AM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        球場報到
+                                    </td>
+                                </tr>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        11:00-5:00PM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        打球
+                                    </td>
+                                </tr>
+                                <!-- Odd row -->
+                                <tr class="bg-white">
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm  text-green-900">
+                                        5:00-8:00PM
+                                    </td>
+                                    <td class="px-6 py-2 whitespace-nowrap text-sm">
+                                        晚會|頒獎典禮 (地點: 信誼餐廳)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="map" class="py-10 px-4 bg-gray-100">
+        <h2 class="text-center text-4xl mb-5 ">地圖</h2>
+        <div class="flex justify-center mb-4 ">
+            <hr class="w-1/4 border-green-300">
+        </div>
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.990012178605!2d120.41693431492729!3d22.76575193159037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e13e18ed54471%3A0xd645fc6977ffca14!2z5L-h6Kq86auY54i-5aSr55CD5aC0!5e0!3m2!1szh-TW!2stw!4v1616381624741!5m2!1szh-TW!2stw"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="flex justify-center mt-4">
+
+            <a href="https://goo.gl/maps/HMqEjBR79akicLcg8" target="_blank" rel="noreferrer"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base  text-white bg-green-600 hover:bg-green-700">
+            Google 地圖
+            </a>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
